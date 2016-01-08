@@ -25,6 +25,7 @@
 <v t="amd.20150919114010.1" a="E"><vh>@path pelican</vh>
 <v t="amd.20151006130205.1"><vh>@edit publishconf.py</vh></v>
 <v t="amd.20151006113136.1" a="E"><vh>@path content</vh>
+<v t="leo.20160108234037.1"><vh>@edit 2015cadp_final.md</vh></v>
 <v t="leo.20160103220609.1"><vh>@edit 2015cadp_w14.md</vh></v>
 <v t="leo.20160103220600.1"><vh>@edit 2015cadp_w13.md</vh></v>
 <v t="leo.20160103220546.1"><vh>@edit 2015cadp_w12.md</vh></v>
@@ -36,6 +37,26 @@
 </v>
 </v>
 <v t="amd.20150919120205.1" a="E"><vh>以下為 reveal 投影片</vh>
+<v t="leo.20160108234054.1"><vh>@button open html</vh>
+<v t="leo.20160108234054.2" a="E"><vh>@clean cadp_final_lecture.html</vh>
+<v t="leo.20160108234054.3"><vh>檔案說明</vh></v>
+<v t="leo.20160108234054.4" a="E"><vh>html 標註</vh>
+<v t="leo.20160108234054.5" a="E"><vh>body 標註</vh>
+<v t="leo.20160108234054.6" a="E"><vh>div class="reveal"</vh>
+<v t="leo.20160108234054.7" a="E"><vh>div class="slides"</vh>
+<v t="leo.20160108234054.8" a="E"><vh>期末心得自評</vh>
+<v t="leo.20160108234054.9"><vh>&lt;&lt; header &gt;&gt;</vh></v>
+</v>
+<v t="leo.20160108234054.10" a="E"><vh>期末心得自評</vh>
+<v t="leo.20160108234054.11"><vh>&lt;&lt; header &gt;&gt;</vh></v>
+</v>
+</v>
+</v>
+<v t="leo.20160108234054.12"><vh>script</vh></v>
+</v>
+</v>
+</v>
+</v>
 <v t="leo.20160103220647.1"><vh>@button open html</vh>
 <v t="leo.20160103220647.2" a="E"><vh>@clean cadp_w14_lecture.html</vh>
 <v t="leo.20160103220647.3"><vh>檔案說明</vh></v>
@@ -2453,5 +2474,111 @@ cadp w14 講課內容投影片
     
     
   </t>
+<t tx="leo.20160108234054.1">@language python
+# 導入 os 模組
+import os
+
+# p 為目前所在節點
+for ch in p.children():
+    filename = ch.h.split(" ")[1]
+    os.system("firefox "+filename)</t>
+<t tx="leo.20160108234054.10">&lt;!-- 以下為投影片 --&gt;
+&lt;!-- 每一個 section 都代表一張投影片,  --&gt;
+&lt;!-- section 標註中的多 section 標註, 將往下垂直延伸 --&gt;
+&lt;&lt; header &gt;&gt;
+
+&lt;section&gt;
+    &lt;h1&gt;期末心得自評&lt;/h1&gt;
+    
+     &lt;p&gt;自評分數:85&lt;/p&gt;
+    &lt;li&gt;這個學期學會了如何使用creo和Onshape把零件畫出來並將其所有的零件組裝出來。一開始用creo和Onshape畫零件和組裝的過程中並不是很熟練，但是一下子就可以熟練地使用，並將小組所分配的零件畫出來和把所有的零件組裝起來。並對倉儲的觀念有更進一步的了解，當做完每次的作業，會充滿成就感和充滿信心。&lt;/li&gt;    
+    
+    &lt;/ol&gt;		
+    &lt;/section&gt;
+    
+&lt;/section&gt;
+</t>
+<t tx="leo.20160108234054.11">&lt;section data-state="header1"&gt;
+&lt;style&gt;.header1 header:after { 
+display: block;
+white-space: pre;
+content: "課程: 電腦輔助設計實習B 學號: 40323202"; }&lt;/style&gt;</t>
+<t tx="leo.20160108234054.12">&lt;script src="lib/js/head.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/reveal.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+&lt;/script&gt;
+	
+</t>
+<t tx="leo.20160108234054.2">@language xml
+@tabwidth -4
+@others
+
+</t>
+<t tx="leo.20160108234054.3">&lt;!--
+cadp w12 講課內容投影片
+--&gt;
+</t>
+<t tx="leo.20160108234054.4">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;CADP W12 課程內容&lt;/title&gt;
+&lt;link rel="stylesheet" href="css/reveal.min.css"&gt;
+	&lt;link rel="stylesheet" href="css/theme/default.css" id="theme"&gt;	
+	&lt;!--增加對於 IE 早期版本的支援 --&gt;
+	&lt;!--[if lt IE 9]&gt;
+	&lt;script src="lib/js/html5shiv.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+&lt;/head&gt;
+@others
+</t>
+<t tx="leo.20160108234054.5">&lt;body&gt;
+@others
+&lt;/body&gt;
+</t>
+<t tx="leo.20160108234054.6">&lt;!-- 將整個投影片包在 "reveal" class 中 --&gt;
+
+&lt;!-- 出現在每一頁的 header 格式 --&gt;
+
+&lt;header style="position: absolute;top: 20px; left: 20px; z-index:300; font-size:30px;background-color: rgba(255,255,255,0.2)"&gt;&lt;/header&gt;
+
+&lt;div class="reveal"&gt;
+@others
+&lt;/div&gt;
+</t>
+<t tx="leo.20160108234054.7">&lt;!-- 將所有投影片包在 "slides" class 中 --&gt;
+&lt;div class="slides"&gt;
+@others
+&lt;/div&gt;
+</t>
+<t tx="leo.20160108234054.8">&lt;!-- 以下為投影片 --&gt;
+&lt;!-- 每一個 section 都代表一張投影片,  --&gt;
+&lt;!-- section 標註中的多 section 標註, 將往下垂直延伸 --&gt;
+&lt;&lt; header &gt;&gt;
+
+    &lt;section&gt;
+    &lt;style&gt;.header1 header:after { content: "Header 1 Example"; }&lt;/style&gt;
+    &lt;h1&gt;期末心得自評&lt;/h1&gt;
+    &lt;p&gt;40323202 林姿馨&lt;/p&gt;
+    &lt;/section&gt;
+    
+&lt;/section&gt;
+
+
+
+
+
+
+    
+    
+  </t>
+<t tx="leo.20160108234054.9">&lt;section data-state="header1"&gt;
+&lt;style&gt;.header1 header:after { 
+display: block;
+white-space: pre;
+content: "課程: 電腦輔助設計實習B 學號: 40323202"; }&lt;/style&gt;</t>
 </tnodes>
 </leo_file>
